@@ -57,8 +57,8 @@ const ColorMode = Object.freeze({
 function HTTP_LIGHTBULB(log, config) {
     this.log = log;
     this.name = config.name;
-    this.debug = config.debug || false;
-
+    // this.debug = config.debug || false;
+    this.debug = true;
     this.colorMode = ColorMode.UNDEFINED;
 
     this.adaptiveLightingSupport = this.checkAdaptiveLightingSupport();
